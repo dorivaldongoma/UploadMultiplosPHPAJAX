@@ -16,7 +16,7 @@ $btnEnviar.addEventListener("click", async () => {
     }
     // Nós os enviamos
     $estado.textContent = "Enviando arquivos...";
-    const respostaRaw = await fetch("../set/guardar.php", {
+    const respostaRaw = await fetch("../conf/guardar.php", {
         method: "POST",
         body: formData,
     });
